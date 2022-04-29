@@ -1,0 +1,2230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.SupperLottoFragment"
+    android:background="@drawable/superlotto_gradient"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/timer_bg"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_12dp"
+            android:paddingBottom="@dimen/_12dp">
+
+            <TextView
+                android:id="@+id/drawNameTv"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_6sdp"
+                android:paddingStart="@dimen/_6sdp"
+                android:gravity="left" />
+
+            <TextView
+                android:id="@+id/timerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_6sdp"
+                android:paddingStart="@dimen/_9sdp"
+                android:textColor="@color/white2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:elevation="@dimen/_5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/timerTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Pool will be \n closing in"
+                    android:textColor="@color/white2" />
+
+                <LinearLayout
+                    android:id="@+id/linear0"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/_5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDay"
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/white2" />
+
+                    <TextView
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="Day"
+                        android:textColor="@color/white2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/_5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHr"
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/white2" />
+
+                    <TextView
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Hr"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/white2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear12"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/_5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMin"
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/white2" />
+
+                    <TextView
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Min"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/white2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearSeconds"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/_5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSec"
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/white2" />
+
+                    <TextView
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Sec"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/white2" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/lotto_yellow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:src="@drawable/jackpottext" />
+
+            <LinearLayout
+                android:id="@+id/llparent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/lotto_yellow" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:gravity="center"
+            android:paddingTop="@dimen/_4dp"
+            android:paddingBottom="@dimen/_4dp"
+            android:src="@drawable/ic_howtoplay"
+            android:text="@string/how_to_play" />
+
+        <FrameLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100dp"
+            android:layout_margin="@dimen/_4dp">
+
+            <com.example.superlotto.Utils.InfiniteViewPager
+                android:id="@+id/viewPagerHelpTips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/sliderDots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </FrameLayout>
+
+        <TableLayout
+            android:id="@+id/table0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/border_topbottom_white"
+            android:gravity="center"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/border_topbottom_white"
+                android:orientation="vertical">
+
+
+                <TableRow
+                    android:id="@+id/tableRow01"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.7"
+                            android:background="@drawable/border_sidebottom_white"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/selectedsuperballnumbers"
+                                android:textSize="@dimen/_12sdp"
+                                android:textAlignment="center"
+                                android:textColor="@color/whitish" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".3"
+                            android:background="@drawable/border_bottom_white"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="S.B"
+                                android:textAlignment="center"
+                                android:textColor="@color/whitish" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow02"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.7"
+                            android:background="@drawable/border_sidebottom_white">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerSelectedNumbers"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3">
+
+                            <FrameLayout
+                                android:id="@+id/rlSelectedSuperballContainer"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="2dp"
+                                android:visibility="invisible">
+
+                                <ImageView
+                                    android:id="@+id/imgRemove"
+                                    android:layout_width="@dimen/_14dp"
+                                    android:layout_height="@dimen/_14dp"
+                                    android:layout_alignRight="@+id/imgSelectedSuperBall"
+                                    android:layout_gravity="top|right"
+                                    android:elevation="2dp"
+                                    android:src="@drawable/ic_superlotto_cross" />
+
+                                <ImageView
+                                    android:id="@+id/imgSelectedSuperBall"
+                                    android:layout_width="@dimen/_32sdp"
+                                    android:layout_height="@dimen/_32sdp"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/yellow_ball_superlotto" />
+
+                                <TextView
+                                    android:id="@+id/txtSelectedSuperBall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:layout_marginBottom="@dimen/_2sdp"
+                                    android:elevation="@dimen/_2sdp"
+                                    android:gravity="center"
+                                    android:textColor="@color/bet_type_bg_Lotto"
+                                    android:textSize="@dimen/_14sdp" />
+
+                            </FrameLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </TableRow>
+            </LinearLayout>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_230sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/colorTransparent"
+            android:gravity="center"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:orientation="vertical">
+
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt1"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip1"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt2"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip2"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt3"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip3"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt4"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="4"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip4"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt5"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="5"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip5"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt6"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="6"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip6"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt7"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="7"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip7"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt8"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="8"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip8"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt9"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="9"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip9"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt10"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="10"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip10"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt11"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="11"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip11"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt12"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="12"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip12"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt13"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="13"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip13"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt14"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="14"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip14"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt15"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="15"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip15"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt16"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="16"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip16"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt17"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="17"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip17"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt18"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="18"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip18"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt19"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="19"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip19"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt20"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="20"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip20"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt21"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="21"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip21"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt22"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="22"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip22"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt23"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="23"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip23"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt24"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="24"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip24"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt25"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="25"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip25"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt26"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="26"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip26"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt27"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="27"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip27"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt28"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="28"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip28"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="7">
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt29"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="29"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip29"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt30"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="30"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip30"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt31"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="31"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip31"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt32"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="32"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip32"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt33"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="33"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip33"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt34"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="34"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip34"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/blue_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/txt35"
+                                style="@style/superlotto_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="35"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/imgChip35"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/orange_ball_superlotto" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </TableRow>
+
+            </LinearLayout>
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/lotto_yellow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:text="@string/super_ball"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/lotto_yellow"
+                android:textStyle="italic" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/lotto_yellow" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:background="@color/colorTransparent"
+            android:gravity="center"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlTop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/colorTransparent"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5">
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount1"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="1"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip1"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount2"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="2"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip2"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount3"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="3"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip3"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount4"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="4"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip4"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount5"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="5"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip5"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount6"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="6"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip6"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount7"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="7"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip7"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount8"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="8"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip8"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount9"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="9"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip9"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/supertxtBetAmount10"
+                                style="@style/superlotto_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:elevation="@dimen/_2sdp"
+
+                                android:gravity="center"
+                                android:text="10"
+                                android:textSize="@dimen/_15sdp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/superimgChip10"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/yellow_ball_superlotto" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </TableRow>
+            </LinearLayout>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/card_inner_spacing_spread"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivClearAll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/superlotto_clear_all" />
+            <ImageView
+                android:id="@+id/ivQuickPick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/superlotto_quick_pick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/card_inner_spacing_spread"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/superlotto_amount_bg"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblNextDraw"
+                    style="@style/superlotto_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/lightgrey"
+                    android:padding="@dimen/_15dp"
+                    android:text="Next Draw"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/txtNextDraw"
+                    style="@style/superlotto_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:drawableEnd="@drawable/drop_down"
+                    android:drawableTint="@color/bet_type_bg_Lotto"
+                    android:gravity="center"
+                    android:padding="@dimen/_15dp"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/card_inner_spacing_spread"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/superlotto_amount_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAmount"
+                    style="@style/superlotto_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/superlottolightblue"
+                    android:padding="@dimen/_8dp"
+                    android:text="@string/amount_dollar1"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/txtAmount"
+                    style="@style/superlotto_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:drawableEnd="@drawable/drop_down"
+                    android:drawableTint="@color/bet_type_bg_Lotto"
+                    android:gravity="center"
+                    android:padding="@dimen/_8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/card_inner_spacing_spread"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:buttonTint="@color/golden"
+            android:text="@string/cashpot_terms_of_use"
+            android:textColor="@color/whitish" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/card_inner_spacing_spread"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/superlotto_amount_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTotalAmount"
+                    style="@style/superlotto_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/superlottolightblue"
+                    android:padding="@dimen/_8dp"
+                    android:text="@string/total_amount_dollar"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/txtTotalAmount"
+                    style="@style/superlotto_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:padding="@dimen/_8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/card_inner_spacing_spread"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/ivCancelPlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/ic_superlotto_reset" />
+
+            <ImageView
+                android:id="@+id/ivPlayNow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/superlotto_playnow" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

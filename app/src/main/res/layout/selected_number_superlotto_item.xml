@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/layoutMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_50sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp">
+
+    <ImageView
+        android:id="@+id/imgRemove"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:src="@drawable/ic_superlotto_cross"
+        android:elevation="@dimen/_2sdp"
+        android:layout_gravity="top|right"/>
+
+    <ImageView
+        android:id="@+id/imgBall"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/yellow_ball_superlotto"
+        android:layout_height="@dimen/_35sdp"/>
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:elevation="@dimen/_2sdp"
+        android:gravity="center"
+        android:textColor="@color/bet_type_bg_Lotto"
+        android:textSize="@dimen/_12sdp"/>
+    </FrameLayout>

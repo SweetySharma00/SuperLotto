@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="three">3</integer>
+    <integer name="two">2</integer>
+    <integer name="one">1</integer>
+    <integer name="four">4</integer>
+    <integer name="game_id_pick4">6</integer>
+    <integer name="game_id_pick3">5</integer>
+    <integer name="game_id_pick2">4</integer>
+    <integer name="game_id_superlotto">8</integer>
+    <integer name="game_id_lotto">7</integer>
+    <integer name="game_id_topdraw">9</integer>
+    <integer name="game_id_lucky5">10</integer>
+    <integer name="game_id_dollaz">11</integer>
+</resources>

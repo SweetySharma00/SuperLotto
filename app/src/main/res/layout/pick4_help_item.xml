@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="@dimen/_60dp">
+
+    <TextView
+        android:id="@+id/txtStepCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_4dp"
+        android:text="Step 1:"
+        android:textColor="@color/pickfourHeadingColor"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/txtHelpDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the number(s) you want to buy (1-36) (Up to 5 at a time)"
+        android:layout_toRightOf="@id/txtStepCount"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/pickfoursteptext"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_12dp"/>
+
+</RelativeLayout>
